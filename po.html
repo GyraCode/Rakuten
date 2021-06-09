@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iiidemo</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            min-width: 375px;
+        }
+
+        /* ---header--- */
+        .header {
+            width: 100%;
+            height: 65px;
+        }
+
+        .nav-all-content-search {
+            width: 150px;
+            /* line-height: 1.8em; */
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .justify-content-flex-end {
+            justify-content: flex-end;
+        }
+
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .border-right {
+            border-right: 4px solid dee2e6;
+        }
+
+        .wtf {
+            outline: 1px solid rgb(255, 0, 0);
+        }
+
+        .nav-all-content-pc a {
+            text-decoration: none;
+            background-color: transparent;
+            color: #fff;
+            text-align: right;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+            padding-top: 6px;
+            padding-left: 10px;
+            background-color: rgb(26, 158, 235);
+            color: aliceblue;
+            margin-left: 20px;
+            margin-top: 23px;
+            border-radius: 20%;
+        }
+
+        .border-bottomme {
+            border-bottom: 1px solid #000;
+        }
+
+        .item-N a {
+            margin-left: 10px;
+            font-size: 1.1rem;
+        }
+
+        .item-N:hover a {
+            background-color: rgb(26, 158, 235);
+            color: #fff;
+        }
+
+        /* ---hero section--- */
+        .word-break-keep-all {
+            word-break: keep-all;
+        }
+
+        /*---content2---  */
+        #mymv {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 5px solid #fff;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .text-align-center {
+            text-align: center
+        }
+
+        /* ---content3--- */
+        .bder {
+            border: 1px solid #ccc;
+        }
+
+        /* ---link icon--- */
+        .tdn {
+            text-decoration: none;
+        }
+
+        /* ---footer2--- */
+        .bgc {
+            background-color: #2b2b2b;
+        }
+
+        .gap {
+            gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <nav class=" header bg-dark">
+        <div class="container">
+            <div class="row  justify-content-flex-end ">
+                <div class="nav-all-content-pc my-auto d-none d-xl-flex ">
+                    <a class=" pl-1 pr-2 border-right  " href="#">首頁</a>
+                    <a class=" pl-1 pr-2 border-right  " href="#">ENGLISH</a>
+                    <a class=" pl-1 pr-2 border-right  " href="#">聯繫我們</a>
+                    <a class=" pl-1 pr-2 border-right  " href="#">網站導覽</a>
+                    <a class=" pl-1 pr-2 border-right  " href="#">電子報訂閱</a>
+                    <a class=" pl-1 pr-2 border-right  " href="#">網站資訊</a>
+                    <a class=" pl-1 pr-2 border-right  " href="#">公告資訊</a>
+                </div>
+                <div class="nav-all-content-search">
+                    <label for="search"></label>
+                    <input type="text" class="form-control mr-2 " id="search" placeholder="請輸入關鍵字">
+                </div>
+                <div class="icon align-items-cente ">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="hder2 pb-3 border-bottomme d-xl-flex d-none">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="hderimg mr-3 ">
+                        <img src="./img/iiiimg/logo.png" alt="">
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">關於資策會</a>
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">創新光點</a>
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">新聞中心</a>
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">活動與課程</a>
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">產業服務</a>
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">出版品</a>
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">資訊公開</a>
+                    </div>
+                    <div class="item-N">
+                        <a class="btn" href="#" role="button">菁英招募</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section -->
+
+    <div class="heroseation " style="margin-top:75px;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"></a><img src="./img/iiiimg/官網1_191219_1140x668.jpg" class="d-block w-100" alt="...">
+                    </div></a>
+                    <div class="carousel-item">
+                        <a href="#"></a><img src="./img/iiiimg/20210406_官網數位轉型成果網站banner.jpg" class="d-block w-100"
+                            alt="...">
+                    </div></a>
+                    <div class="carousel-item">
+                        <a href="#"></a><img src="./img/iiiimg/新書_官網_210407V3.jpg" class="d-block w-100" alt="...">
+                    </div></a>
+                    <div class="carousel-item">
+                        <a href="#"><img src="./img/iiiimg/DXBAR_官網_200408V4.jpg" class="d-block w-100" alt="...">
+                    </div></a>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </div>
+    </div>
+    <!-- content 1 -->
+    <div class="content">
+        <div class="container">
+            <div class="row  d-flex my-5 justify-content-center word-break-keep-all" style="min-width:  375px ;">
+                <div class="title col-12 text-center">
+                    <img src="./img/iiiimg/head.jpg" alt="">
+                </div>
+                <div class="col-xl-4 mt-3">
+                    <div class="card p-1">
+                        <img src="./img/iiiimg/新聞室.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-secondary">2021/05/07</p>
+                            <h5>新聞室</h5>
+                            <p class="pb-3 border-bottom">面對全齡照護時代 資策會:福祉科技法至為發展重點</p>
+                            <h5 class="text-secondary">READ MORE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col d-xl-flex d-none mt-3">
+                    <div class="card p-1">
+                        <img src="./img/iiiimg/研究活動.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-secondary">2021/06/09~2021/06/09</p>
+                            <h5>研究討論</h5>
+                            <p class="pb-3 border-bottom ">「資安漏洞常更新 個資安全才放心」－經濟部工業局110年企業個人資料保護暨</p>
+                            <h5 class="text-secondary">READ MORE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4  col d-xl-flex d-none mt-3">
+                    <div class="card p-1">
+                        <img src="./img/iiiimg/學習成長.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-secondary">2021/03/29~2021/03/31</p>
+                            <h5>學習成長</h5>
+                            <p class="pb-3 border-bottom ">【資策會】FB廣告投放自己來，讓您行銷的每一分錢都花在刀口上!!</p>
+                            <a href="" lass="text-secondary">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content 2 -->
+    <div class="content2 mt-3" style="background: url(./img/iiiimg/bg.jpg) no-repeat; min-width:375px ;">
+        <div class="container">
+            <div class="row d-flex justify-content-between wtf " style="margin-top: 5em;">
+                <div class=" text-white d-flex justify-content-between " style="width: 100%;">
+                    <div class="divleft col-xs-12 " style="margin-top:70px;">
+                        <h2><img src="./img/iiiimg/icon_04.png" alt="">台灣數位轉型軟實力前進國際</h2>
+                        <p class="" style="width: 87%; margin:0.5em auto;text-align:left;font-size: 0.8em;
+                        line-height: 1.7em;">【台灣數位轉型軟實力前進國際】Hei
+                            siellä<br>前進國際，資策會協助廠商拓展國際合作，從日本、泰國、菲<br>律賓，這一站我們攜手芬蘭。國際合作上的成果，讓卓執行長說給您聽。&nbsp;</p>
+                        <div class=" d-flex justify-content-center" style="width: 100%;">
+                            <div class=" btn bg-primary text-white "
+                                style="width:160px;border-radius: 5px;font-size: 0.8em;margin: 0;">閱讀更多
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-video mb-4 col-xs-12 "
+                        style="position: relative;width: 50%;height:300px;margin-top:70px;">
+                        <iframe id="mymv" src="https://www.youtube.com/embed/PH57TJVHGsw" frameborder="0"
+                            allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content 3 -->
+    <div class="content">
+        <div class="container">
+            <div class="row  d-flex my-5  justify-content-center word-break-keep-all">
+                <div class="title col-12 text-center">
+                    <img src="./img/iiiimg/head3.png" alt="">
+                </div>
+                <div class="col-xl-4 mt-3">
+                    <div class="card" style="min-height: 580px;">
+                        <img src="./img/iiiimg/社會數位轉型s.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body" style="margin: 1em auto;
+                        width: 90%;">
+                            <h4 class=" text-muted" style="font-size: 1rem;font-weight: 800;">全球聚焦「社會數位轉型」
+                                友善循環</h4>
+                            <p class="text-muted pb-3 pt-3">數位科技（Digital
+                                Technology）一詞對於大多數人而言並不陌生，意指「以資訊數據為核心的知識與工具」，舉凡近幾年經常為人所討...</p>
+                            <div class="col-xs-6 mr-xs-6 mt-3" style="margin: 0 25%;">
+                                <a href="#" class=""><img src="./img/iiiimg/readmore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col d-xl-flex d-none mt-3">
+                    <div class="card " style=" min-height: 580px;">
+                        <img src="./img/iiiimg/0617_00082.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body" style="margin: 1em auto;
+                        width: 90%;">
+                            <h4 class=" text-muted" style="font-size: 1rem;font-weight: 800;">大數據助攻台劇
+                                資策會團隊攜手《大</h4>
+                            <p class="text-muted pb-3 pt-3">
+                                2021年公共電視迷你劇集《大債時代》於1月開播，這是繼《我們與惡的距離》後，公視與資策會數位服務創新研究所(服創所)第二次攜手合作，再次透...
+                            </p>
+                            <div class="" style="margin: 0 25%;">
+                                <a href="#" class="my-auto"><img src="./img/iiiimg/readmore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col d-xl-flex d-none mt-3">
+                    <div class="card " style="min-height: 580px;">
+                        <img src="./img/iiiimg/photo1-624x398.jpg" class="card-img-top p-3" alt="..."
+                            style="overflow: hidden;">
+                        <div class="card-body" style="margin: 1em auto;
+                        width: 90%;">
+                            <h4 class=" text-muted" style="font-size: 1rem;font-weight: 800;">
+                                資策會、網訊與新竹物流，共創新零</h4>
+                            <p class="text-muted pb-3 pt-3">
+                                為了協助零售業者數位轉型成為智慧新零售商，分別在科技、客服與物流界扮演領導角色的資策會、網訊電通與新竹物流共組「新零售大聯盟」，期望運用區塊...
+                            </p>
+                            <div class="" style="margin: 0 25%;">
+                                <a href="#" class="my-auto"><img src="./img/iiiimg/readmore.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- link icon -->
+    <div class="linkicon">
+        <div class="container">
+            <div class="row  gap">
+                <div class="">
+                    <img src="./img/iiiimg/link.png" alt="">
+                </div>
+            </div>
+            <div class="row  mt-5 mr-5 d-none d-lg-block">
+                <div class=" mx-auto d-flex d-flex justify-content-between gap ">
+                    <div class="col-lg-2">
+                        <a class="" href="#"><img style="width:110px;height: 110px;" src="./img/iiiimg/icon_0603.jpg"
+                                alt="">
+                            <p class=" mt-2   text-center text-dark " style="font-size: 0.8rem;font-weight: 700;">
+                                國家產業創新獎</p>
+                        </a>
+                    </div>
+                    <div class=" col-lg-2">
+                        <a class="" href="#"><img style="width:110px;height: 110px;" src="./img/iiiimg/icon_07.jpg"
+                                alt="">
+                            <p class=" mt-2  text-center text-dark" style="font-size: 0.8rem;font-weight: 700;">
+                                教研所
+                                課程總目錄</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 ">
+                        <a class=" " href="#"><img style="width:110px;height: 110px;" src="./img/iiiimg/icon_09.jpg"
+                                alt="">
+                            <p class=" mt-2  text-center text-dark " style="font-size: 0.8rem;font-weight: 700;">
+                                FIND
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="" href="#"><img style="width:110px;height: 110px;" src="./img/iiiimg/icon_11.jpg"
+                                alt="">
+                            <p class=" mt-2  text-center text-dark" style="font-size: 0.8rem;font-weight: 700;">
+                                聯絡我們
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 ">
+                        <a class="" href="#"><img style="width:110px;height: 110px;" src="./img/iiiimg/icon_15.jpg"
+                                alt="">
+                            <p class=" mt-2   text-center text-dark " style="font-size: 0.8rem;font-weight: 700;">
+                                洗錢防制全名總動員</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 ">
+                        <a class="" href="#"><img style="width:110px;height: 110px;" src="./img/iiiimg/icon_10.jpg"
+                                alt="">
+                            <p class=" mt-2  text-center text-dark" style="font-size: 0.8rem;font-weight: 700;">
+                                政府軟體採購網站</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer1 -->
+    <div class=" bg-secondary" style="width: 100%;">
+        <div class="container">
+            <div class="row justify-content-space-between d-flex">
+                <div class="mt-4">
+                    <a href="#"><img src=" ./img/iiiimg/資策會成果網.png" alt=""></a>
+                    <div class="mt-3">
+                        <a href="#">
+                            <p class=" text-white" style="font-size: 1rem;font-weight: 700;">>資策會成果展</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#"><img src="img/iiiimg/資策會官網_工作區域 1.jpg" alt=""></a>
+                    <div class="mt-3">
+                        <a href="#">
+                            <p class=" text-white" style="font-size: 1rem;font-weight: 700;">> 【34th MIC
+                                FORUM
+                                Spring】關鍵議<br>題全盤剖析</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="mt-4">
+                    <a href="#"><img src="./img/iiiimg/未命名-3.png" alt=""></a>
+                    <div class="mt-3">
+                        <a href="#">
+                            <p class="text-white" style="font-size: 1 rem ;font-weight: 700;">
+                                >IoTe國際與台灣安全認證標準研討會
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer2 -->
+    <div class="bgc" style="width: 100%;">
+        <div class="container">
+            <div class="row justify-content-space-between d-flex">
+                <div class="text-white my-5" style="font-size: 0.8rem;line-height: 0.9rem;">
+                    <p>
+                        所登載的內容係屬本會版權所有
+                    </p>
+                    <p>
+                        在未取得本會書面同意前
+                    </p>
+                    <p>
+                        不得做片面、全面使用，拷貝、列印、轉載於任何媒體
+                    </p>
+                    <p>
+                        <a href="#" class=" text-white pr-2 border-right">隱私權聲明</a>
+                        <a href="#" class=" text-white pl-2 pr-2 border-right">網站資訊使用聲明</a>
+                        <a href="#" class=" text-white pl-2 pr-2 ">個資當事人行使權利專頁</a>
+                    </p>
+                    <p>建議瀏覽器:</p>
+                    <p class="  ">本網站支援IE10以上、Firefox及Chrome</p>
+                </div>
+                <div class="my-5 mr-auto ml-5 text-white text-center" style="font-size: 0.8rem;line-height: 0.9rem;">
+                    <img src="./img/iiiimg/copyright.png" alt="">
+                    <p>
+                        10622台北市大安區和平東路二段106號11樓
+                    </p>
+                    <p><a href="#" class="text-white">TEL 02-6631-8168</a></p>
+                    <p><a href="#" class="text-white">FAX 02-2735-0655</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
